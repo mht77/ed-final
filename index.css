@@ -1,0 +1,54 @@
+li{
+    line-height: 35px;
+    text-align: justify;
+}
+
+ul{
+    list-style-type: square;
+}
+
+ol {
+    counter-reset: list;
+}
+
+ol > li {
+    list-style: none;
+}
+
+ol > li:before {
+    content: counter(list, decimal) ") ";
+    counter-increment: list;
+}
+
+.row {
+    margin-top: 120px;
+    margin-left: -250px;
+    position: fixed;
+    width: 100%;
+}
+
+.col {
+    width: 30%;
+    margin-left: 200px;
+    float: left;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1080px) {
+    .col{
+        margin-left: 25px;
+        width: 35%;
+    }
+    .row{
+        margin-left: -200px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .col{
+        width: 40%;
+        margin-left: 25px;
+    }
+    .row{
+        margin-left: -250px;
+    }
+}
