@@ -1,11 +1,88 @@
 .col-assignment{
-    width: 25%;
+    width: 350px;
     float: left;
-    margin-left: 40px;
+    margin-left: 75px;
 }
 .row-assignment{
+    text-align: center;
     margin-top: 120px;
-    margin-left: -100px;
+    margin-left: -250px;
     position: fixed;
     width: 100%;
+}
+
+.col-assignment > h2{
+    color: darkorange;
+}
+
+.col-assignment > img{
+    width: 350px;
+    height: 350px;
+    border-radius: 150px;
+    object-fit: cover;
+    position: relative;
+}
+
+p{
+    font-size: 20px;
+    margin-top: -200px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background: rgba(223,176,91,1);
+    color: black;
+    vertical-align: middle;
+}
+
+.col-assignment > p {
+    opacity: 0;
+}
+
+.col-assignment:hover img{
+    border: darkorange solid 3px;
+}
+
+.col-assignment:hover p{
+    display: block;
+    opacity: 0.8;
+}
+
+h5{
+    margin-top: 200px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .col-assignment{
+        width: 200px;
+        margin-left: 35px;
+    }
+
+    .col-assignment > img{
+        width: 200px;
+        height: 200px;
+        border-radius: 75px;
+    }
+    p{
+        font-size: 14px;
+        margin-top: -120px;
+    }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1080px) {
+    .col-assignment{
+        width: 250px;
+        margin-left: 55px;
+    }
+
+    .col-assignment > img{
+        width: 250px;
+        height: 250px;
+        border-radius: 100px;
+    }
+    p{
+        font-size: 17px;
+        margin-top: -150px;
+    }
+    h5{
+        margin-top: 150px;
+    }
 }
