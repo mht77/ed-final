@@ -8,7 +8,7 @@ html, body {
 
 .leftSide{
     height: auto;
-    width: 10%;
+    width: 12%;
     left: 0;
     position: fixed;
     top: 0;
@@ -20,8 +20,8 @@ html, body {
 }
 
 .leftSide > a > h3:hover{
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
     background: darkorange;
     color: rgb(80,80,80);
 }
