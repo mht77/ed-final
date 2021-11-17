@@ -46,7 +46,7 @@ p{
     opacity: 0.8;
 }
 
-h5{
+p+h5{
     margin-top: 200px;
 }
 
@@ -82,7 +82,7 @@ h5{
         font-size: 17px;
         margin-top: -150px;
     }
-    h5{
+    p+h5{
         margin-top: 150px;
     }
 }
